@@ -50,6 +50,14 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.gab %}
+    <a href="https://gab.com/compose?url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-gab" title="Share on Gab">
+      <span class="fab fa-fw fa-gab" aria-hidden="true"></span>
+      <span class="sr-only">Gab</span>
+    </a>
+  {% endif %}
+
 </section>
 
 {% endif %}
